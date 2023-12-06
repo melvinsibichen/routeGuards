@@ -1,21 +1,25 @@
-/* Reset some default styles */
-body, h2, form, label, input, button {
+body,
+h2,
+form,
+label,
+input,
+button {
     margin: 0;
     padding: 0;
-  }
-  
-  body {
+}
+
+body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
-  }
-  
-  h2 {
+}
+
+h2 {
     text-align: center;
     margin-top: 50px;
     color: #343a40;
-  }
-  
-  form {
+}
+
+form {
     max-width: 400px;
     margin: 20px auto;
     padding: 20px;
@@ -23,16 +27,16 @@ body, h2, form, label, input, button {
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form-label {
+}
+
+.form-label {
     display: block;
     margin-bottom: 10px;
     font-weight: bold;
     color: #343a40;
-  }
-  
-  .form-control {
+}
+
+.form-control {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -41,15 +45,15 @@ body, h2, form, label, input, button {
     border-radius: 4px;
     background-color: #f8f9fa;
     color: #495057;
-  
+
     &:focus {
-      outline: none;
-      border-color: #007bff;
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        outline: none;
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     }
-  }
-  
-  .btn {
+}
+
+.btn {
     display: block;
     width: 100%;
     padding: 10px 15px;
@@ -60,15 +64,13 @@ body, h2, form, label, input, button {
     color: #fff;
     background-color: #28a745;
     margin-top: 10px;
-  }
-  
-  .btn:hover {
+}
+
+.btn:hover {
     background-color: #218838;
-  }
-  
-  /* Additional styles for spacing between form elements */
-  label + label,
-  input + input {
+}
+
+label+label,
+input+input {
     margin-top: 10px;
-  }
-  
+}

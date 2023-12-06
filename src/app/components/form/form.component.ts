@@ -1,4 +1,3 @@
-// form.component.ts
 import { Component } from '@angular/core';
 import { FormConfirmGuard } from 'src/app/routeGuards/confirm.guard';
 
@@ -12,7 +11,7 @@ export class FormComponent implements FormConfirmGuard {
 
   submitForm() {
     this.submitted = true;
-    console.log('Form submitted successfully..!');
+    console.log('Form submitted successfully');
   }
 
   canDeactivate(): boolean {
