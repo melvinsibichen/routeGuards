@@ -1,0 +1,38 @@
+<!-- admin -->
+<div *ngIf="isAdmin; else home">
+  <p><b>Welcome, <span>Admin</span></b></p>
+
+  <section class="statistics">
+    <h2>Statistics</h2>
+    <p>Total Users: 1,000</p>
+    <p>Active Users: 800</p>
+    <p>Revenue: $100,000</p>
+  </section>
+
+  <section class="recent-logs">
+    <h2>Recent Logs</h2>
+    <ul>
+      <li>Updated user permissions for John Doe.</li>
+      <li>Generated monthly financial report.</li>
+      <li>Reviewed and approved pending user requests.</li>
+    </ul>
+  </section>
+
+</div>
+
+
+<!-- user -->
+<ng-template #home>
+  <p><b>Welcome,</b> <span><b>User</b></span> <span> <a class="form" href="form">Register here..!</a></span> </p>
+
+  <section class="recent-activity">
+    <h2>Recent Activity</h2>
+    <ul>
+      <li>Posted a comment on "Article Title."</li>
+      <li>Updated profile information.</li>
+      <li>Received a new message from a friend.</li>
+    </ul>
+  </section>
+</ng-template>
+
+<div (click)="logout()" class="btns"><a class="btn btn-primary" type="button" href='login'>Logout</a></div>
